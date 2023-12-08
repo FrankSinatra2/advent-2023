@@ -4,6 +4,7 @@ import (
 	problem2 "advent/problem-2"
 	problem3 "advent/problem-3"
 	problem4 "advent/problem-4"
+	problem5 "advent/problem-5"
 	"fmt"
 	"os"
 )
@@ -21,6 +22,7 @@ func main() {
 		"problem-2": problem2.Run,
 		"problem-3": problem3.Run,
 		"problem-4": problem4.Run,
+		"problem-5": problem5.Run,
 	}
 
 	if problems[args[0]] != nil {
