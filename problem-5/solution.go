@@ -81,6 +81,7 @@ func ParseFile(path string) ([]int, map[string][]Range) {
 		fmt.Printf("err: %v\n", err.Error())
 		os.Exit(1)
 	}
+	defer file.Close()
 
 	scanner := bufio.NewScanner(file)
 
